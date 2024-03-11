@@ -89,10 +89,10 @@ for (let i=0; i<10; i++)
 }
 
 // //aflarea celui mai mic numar dintr0un array cu FOR
-let smallestNr = numbers.MAX_SAFE_INTEGER;
+let smallestNr = Number.MAX_SAFE_INTEGER;
 
 for (let i=0; i< numbers.length; i++)
 { if(numbers[i] < smallestNr)
      {smallestNr = numbers[i];}
 }
-console.log(`cel mai mic numar din lista este ${numbers[i]}`); //////////////// DE CORECTAT AICI!!!
+console.log('Cel mai mic numar din lista:', smallestNr); 
