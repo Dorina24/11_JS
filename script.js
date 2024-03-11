@@ -55,10 +55,10 @@ switch (dayOfTheWeek)
         break;    
 }
 
-// WHILE _________________________________________________
+// Bucla WHILE _________________________________________________
 
 const numbers = [2, 99, 34, 25, 1, -23];
-let smallestNumber = Number.MAX_SAFE_INTEGER;
+let smallestNumber = Number.MAX_SAFE_INTEGER;    // am pus MAX_SAFE_INTEGER pentru a garanta ca MAX este unul din numerele din lista
 let currentIndex = 0;
 
 while (currentIndex < numbers.length)
@@ -68,4 +68,17 @@ while (currentIndex < numbers.length)
     currentIndex++;
  }
  console.log('Cel mai mic numar din lista este: ', smallestNumber);
+
+ //  Bucla DO  --- WHILE ________________________________________
+
+ let n=10;
+ let num = 0;
+ do {
+        num++;
+        console.log(num);
+      
+ } 
+        while(num<n);
+
+
 
