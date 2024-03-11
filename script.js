@@ -70,7 +70,7 @@ while (currentIndex < numbers.length)
  console.log('Cel mai mic numar din lista este: ', smallestNumber);
 
  //  Bucla DO  --- WHILE ________________________________________
-
+  //aflarea celui mai mic numar dintr0un array
  let n=10;
  let num = 0;
  do {
@@ -80,5 +80,19 @@ while (currentIndex < numbers.length)
  } 
         while(num<n);
 
+// FOR ________________________________________________
 
+let times = 10;
+for (let i=0; i<10; i++)
+{
+    console.log(`Hello ${i}!`);
+}
 
+// //aflarea celui mai mic numar dintr0un array cu FOR
+let smallestNr = numbers.MAX_SAFE_INTEGER;
+
+for (let i=0; i< numbers.length; i++)
+{ if(numbers[i] < smallestNr)
+     {smallestNr = numbers[i];}
+}
+console.log(`cel mai mic numar din lista este ${numbers[i]}`); //////////////// DE CORECTAT AICI!!!
