@@ -96,3 +96,47 @@ for (let i=0; i< numbers.length; i++)
      {smallestNr = numbers[i];}
 }
 console.log('Cel mai mic numar din lista:', smallestNr); 
+
+// FOR--OF__________________________________________________
+const numbers2 = [22,11,4,29];
+let min=numbers2[0];
+for (const num of numbers2)
+{if (num<min)
+{min=num;}
+}
+console.log(`Cel mai mic numar din colectie este ${min}`);
+
+//   FOR ... IN __________________________________________________
+const myCar =
+{
+    brand: 'Volvo',
+    model: 'XC90',
+    manufactureYear : 2012
+};
+
+for (const property in myCar)
+{
+    console.log(`${property} are valoarea ${myCar[property]}`);
+}
+
+//BREAK  SI  CONTINUE ______________________________________________
+
+const number3=[1,2,3,4,5,6];
+const numberToFind = 3;
+let isNumberInArray = false;
+
+for (const num of number3)
+{   if(numberToFind === num)
+    {
+        isNumberInArray = true;
+        break
+    }
+}
+console.log(`${numberToFind} este in array:  ${isNumberInArray}`);
+
+for(const num of number3)
+{
+    if(num%2>0)
+    {continue;}
+    }
+console.log(`numarul ${num} este par, iar dublul lui este ${num*2}`);
